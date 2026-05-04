@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Order Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #fdf2e9; 
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+            margin: 0;
+        }
+
+        .form-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        h1 {
+            color: #8d6e63; 
+            font-size: 1.5rem;
+            border-bottom: 2px solid #d7ccc8;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+
+        .user-info {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            flex: 1;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #5d4037;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .option-item {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.2);         }
+
+        input[type="submit"] {
+            background-color: #6d4c41;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4e342e;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-card">
+    <form action="#">
+        <div class="user-info">
+            <div class="input-group">
+                <label>First Name</label>
+                <input type="text" value="xyz">
+            </div>
+            <div class="input-group">
+                <label>Last Name</label>
+                <input type="text" value="abc">
+            </div>
+        </div>
+
+        <h1>Hot Beverages</h1>
+        <label class="option-item"><input type="radio" name="beverage"> Tea</label>
+        <label class="option-item"><input type="radio" name="beverage"> Coffee</label>
+        <label class="option-item"><input type="radio" name="beverage"> Milk</label>
+
+        <h1>Combo Deals</h1>
+        <label class="option-item"><input type="checkbox"> Burger + Cold Coffee</label>
+        <label class="option-item"><input type="checkbox"> Pizza + Cold Coffee</label>
+        <label class="option-item"><input type="checkbox"> Pizza + Burger + Cold Coffee</label>
+
+        <input type="submit" value="Place Order">
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grocery Bill</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 600px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        caption {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        th {
+            background-color: orange;
+            color: white;
+            padding: 12px;
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e8f5e9;        }
+
+      
+        .total-row {
+            background-color: #ef5350 !important; /* Soft red */
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Grocery Bill</caption>
+        <thead>
+            <tr>
+                <th>Sr. No.</th>
+                <th>Items</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>abc</td>
+                <td>2</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>xyz</td>
+                <td>1</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>mno</td>
+                <td>4</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>pqr</td>
+                <td>3</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>stu</td>
+                <td>1</td>
+                <td>400</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="total-row">
+                <td colspan="3">Total</td>
+                <td>1650</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

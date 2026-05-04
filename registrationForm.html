@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Professional Student Registration</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f7f6; display: flex; justify-content: center; padding: 20px; }
+        .form-container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%; max-width: 500px; }
+        h2 { text-align: center; color: #2c3e50; margin-bottom: 20px; }
+        fieldset { border: 1px solid #ddd; border-radius: 5px; padding: 15px; margin-bottom: 20px; }
+        legend { font-weight: bold; color: #34495e; padding: 0 10px; }
+        label { display: block; margin-top: 10px; font-weight: 500; }
+        input[type="text"], select { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        .inline-group { display: flex; gap: 10px; }
+        .gender-group, .skill-group { margin-top: 10px; }
+        input[type="submit"] { width: 100%; background-color: #27ae60; color: white; padding: 12px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; margin-top: 10px; }
+        input[type="submit"]:hover { background-color: #219150; }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Student Registration</h2>
+    <form action="success.html" method="POST">
+        
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" required placeholder="John">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" required placeholder="Doe">
+
+            <label>Date of Birth</label>
+            <div class="inline-group">
+                <select name="day" style="flex: 1;">
+                    <option disabled selected>Day</option>
+                    <option>1</option><option>2</option><option>3</option><option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+<option>31</option>
+
+                </select>
+                <select name="month" style="flex: 2;">
+                    <option disabled selected>Month</option>
+                    <option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option>June</option><option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option>
+                </select>
+                <input type="text" name="year" placeholder="Year" style="flex: 1;">
+            </div>
+
+            <label>Gender</label>
+            <div class="gender-group">
+                <input type="radio" id="male" name="gender" value="male"> <label style="display:inline;" for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" style="margin-left: 15px;"> <label style="display:inline;" for="female">Female</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+            <label for="college">College Name</label>
+            <select id="college" name="college">
+                <option>D Y Patil College of Engineering and Technology, Kasaba Bawada</option>
+                <option>D Y Patil College of Engineering and Technology, Talsande</option>
+<option>D Y Patil College of Engineering and Technology, Salokhenagar</option>
+
+            </select>
+
+            <label for="branch">Branch</label>
+            <select id="branch" name="branch">
+                <option>Computer Science and Engineering</option>
+                <option>Mechanical Engineering</option>
+                <option>Chemical Engineering</option>
+            </select>
+        </fieldset>
+
+        <label>Technical Skills</label>
+        <div class="skill-group">
+            <input type="checkbox" id="html" name="skills" value="html"> <label style="display:inline;" for="html">HTML</label>
+            <input type="checkbox" id="css" name="skills" value="css" style="margin-left:10px;"> <label style="display:inline;" for="css">CSS</label>
+            <input type="checkbox" id="js" name="skills" value="js" style="margin-left:10px;"> <label style="display:inline;" for="js">JS</label>
+        </div>
+
+        <input type="submit" value="Complete Registration">
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>DYPCET - Embedded View</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h2 {
+            color: #1a237e;
+            margin-bottom: 20px;
+        }
+
+        .iframe-container {
+            border: 5px solid white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden; /* Rounds the corners of the iframe itself */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            display: block;
+        }
+
+        .info {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>DYPCET Official Portal</h2>
+
+    <div class="iframe-container">
+        <iframe 
+            src="https://coek.dypgroup.edu.in/" 
+            title="DY Patil College Website">
+        </iframe>
+    </div>
+
+    <p class="info">Note: Some websites prevent embedding for security (X-Frame-Options).</p>
+
+</body>
+</html>

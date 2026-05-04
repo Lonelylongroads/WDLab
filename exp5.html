@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>HTML Text Formatting</title>
+    <style>
+        body {
+            background-color: #ffa500; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            justify-content: center;
+        }
+
+
+        header {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px dashed #aaa;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+        }
+
+        mark {
+            background-color: #ffff00;
+            padding: 0 4px;
+        }
+
+        .tag-info {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <header>HTML Formatting Guide</header>
+    <hr>
+
+    <main>
+        <p><small>This is &lt;small&gt; text.</small></p>
+        
+        <p>This <del>message</del> is &lt;del&gt; (deleted)...</p>
+        
+        <p>The &lt;strike&gt; tag can also <strike>cross out</strike> a message.</p>
+        
+        <hr>
+
+        <p><i>Italic text using the &lt;i&gt; tag...</i></p>
+        
+        <p><em>The &lt;em&gt; tag is also used for emphasis!</em></p>
+        
+        <p><b>Bold text using the &lt;b&gt; tag!</b></p>
+        
+        <p><strong>The &lt;strong&gt; tag also makes text bold.</strong></p>
+        
+        <hr>
+
+        <p class="tag-info">The &lt;pre&gt; tag preserves both spaces and line breaks:</p>
+<pre>
+Pre tag
+       don't
+            ignore
+spaces
+     and
+        next lines...
+</pre>
+
+        <hr>
+
+        <p>I <del>don't</del> <ins>like</ins> using <mark>HTML</mark> formatting tags!</p>
+    </main>
+</body>
+</html>
